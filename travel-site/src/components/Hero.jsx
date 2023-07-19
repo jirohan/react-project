@@ -7,7 +7,7 @@ const Hero = () => {
         <div className='max-w-[1200px] m-auto'>
             <div className='absolute top-[40%] w-full md:-[50%] max-w-[600px] h-full flex flex-col text-white p-4'>
                 <h1 className='font-bold text-4xl'>Find Your Special Trip</h1>
-                <h2 className='text-4xl py-4 italic'>With Monthly</h2>
+                <h2 className='text-4xl py-4 italic'>With Monthaway</h2>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime soluta, rerum eaque nisi porro rem possimus, eos, in dicta facere necessitatibus corrupti commodi itaque eveniet at doloremque quia dolor qui.</p>
             </div>
         </div>
