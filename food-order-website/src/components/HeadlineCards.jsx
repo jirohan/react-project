@@ -4,7 +4,7 @@ const HeadlineCards = () => {
   return (
     <div className='max-w-[1360px] mx-auto p-4 py-12 grid md:grid-cols-3 gap-6'>
         {/* Card */}
-        <div className='rounded-xl relative'>
+        <div className='rounded-xl relative hover:scale-105 duration-300'>
             {/* Overlay */}
             <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
                 <p className='font-bold text-2xl px-2 pt-4'>Chaku Yomari</p>
@@ -14,7 +14,7 @@ const HeadlineCards = () => {
             <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src="https://askmeaboutnepal.com/wp-content/uploads/2021/12/Yomari_double.jpg" alt="" />
         </div>
         {/* Card */}
-        <div className='rounded-xl relative'>
+        <div className='rounded-xl relative hover:scale-105 duration-300'>
             {/* Overlay */}
             <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
                 <p className='font-bold text-2xl px-2 pt-4'>Buff Choila</p>
@@ -24,7 +24,7 @@ const HeadlineCards = () => {
             <img className='max-h-[160px] md:max-h-[200px] w-full object-cover rounded-xl' src="https://www.century-foods.com/wp-content/uploads/2021/05/Buff-chhoila-recipe.jpg" alt="" />
         </div>
         {/* Card */}
-        <div className='rounded-xl relative'>
+        <div className='rounded-xl relative hover:scale-105 duration-300'>
             {/* Overlay */}
             <div className='absolute w-full h-full bg-black/50 rounded-xl text-white'>
                 <p className='font-bold text-2xl px-2 pt-4'>Egg Woo</p>
