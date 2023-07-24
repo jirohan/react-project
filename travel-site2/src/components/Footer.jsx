@@ -55,13 +55,13 @@ const Footer = () => {
             </div>
         </div>
 
-        <div className=''>
-            <p>2023 Experiences, LLC, All Rights Reserved.</p>
-            <div>
-                <FaFacebook />
-                <FaInstagram />
-                <FaTwitter />
-                <TiSocialPinterest />
+        <div className='flex flex-col max-w-[1400px] px-2 py-4 mx-auto justify-between sm:flex-row text-center text-gray-500'>
+            <p className='py-4'>2023 Experiences, LLC, All Rights Reserved.</p>
+            <div className='flex justify-between sm:w-[300px] pt-4 text-2xl'>
+                <FaFacebook size={30} />
+                <FaInstagram size={30} />
+                <FaTwitter size={30} />
+                <TiSocialPinterest size={30} />
             </div>
         </div>
     </div>
