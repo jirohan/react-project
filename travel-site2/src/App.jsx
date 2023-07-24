@@ -5,6 +5,7 @@ import Offers from './components/Offers'
 import Plan from './components/Plan'
 import Rooms from './components/Rooms'
 import ImageSlider from './components/ImageSlider'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
       <Plan />
       <Rooms />
       <ImageSlider />
+      <Footer />
     </div>
   )
 }
