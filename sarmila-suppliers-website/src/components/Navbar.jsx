@@ -25,7 +25,6 @@ const Navbar = () => {
         </div>
         <div className='md:hidden cursor-pointer' onClick={handleClick}>
           {!nav ? <AiOutlineMenu size={30}/> : < AiOutlineClose size={30}/> }
-          
         </div>
       </div>
 
