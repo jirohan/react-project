@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    li{
+        @apply p-4 text-xl
+    }
+
+    button {
+        @apply text-white border bg-gray-400 border-gray-400 hover:bg-transparent hover:text-gray-600 rounded-md
+    }
+}
