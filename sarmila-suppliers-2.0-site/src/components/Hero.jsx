@@ -8,10 +8,10 @@ const Hero = () => {
             <p className='text-[#00df9a] uppercase font-bold p-2'>Best Oxygen Service in Kathmandu</p>
             <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>Oxygen Available 24/7</h1>
             <div className='flex justify-center items-center'>
-                <p className='md:tex-5xl sm:text-4xl text-xl font-bold py-4'>Fast, FLexible, Financing for </p>
-                <Typed className='md:tex-5xl sm:text-4xl text-xl font-bold md:pl-4 pl-2' strings={['BTB', 'BTC', 'SAAS']} typeSpeed={120} backSpeed={140} loop />
+                <p className='md:tex-5xl sm:text-4xl text-xl font-bold py-4'>Contact us for all kinds of </p>
+                <Typed className='md:tex-4xl sm:text-3xl text-lg font-bold md:pl-4 pl-2' strings={['Oxygen', 'Concentrator', 'Medical Goods']} typeSpeed={120} backSpeed={140} loop />
             </div>
-            <p className='md:text-2xl rext-xl font-bold text-gray-500'>Monitor your data analytics to increase revenue for BTB, BTC and SAAS platforms.</p>
+            <p className='md:text-2xl rext-xl font-bold text-gray-500'>We provide you all the Medical Equipment, Oxygen, Surgical Goods.</p>
             <button className='bg-[#00df9a] w-[200px] rounded-md font-medium my-6 mx-auto py-3 text-black'>Get Started</button>
         </div>
     </div>
