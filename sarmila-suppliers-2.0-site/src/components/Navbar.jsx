@@ -25,7 +25,7 @@ const Navbar = () => {
             {nav ? <AiOutlineClose size={20} className='cursor-pointer'/> : <AiOutlineMenu size={20} className='cursor-pointer'/>}
         </div>
         {/* mobile menu */}
-        <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]'}>
+        <ul className={nav ? 'fixed left-0 top-0 w-[70%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]'}>
             <div className='flex'>
                 <img src={Logo} className='ml-4 mt-6 w-[50px] h-[50px] cursor-pointer' alt="" />
                 <h1 className='w-full text-l mt-9 mr-4 font-bold text-[#ffffff] cursor-pointer'>SARMILA SUPPLIERS</h1>
