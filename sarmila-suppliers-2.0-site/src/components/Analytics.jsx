@@ -1,5 +1,4 @@
 import React from 'react'
-import Laptop from '../assets/laptop.jpg'
 import Oxygen from '../assets/oxygen.jpg'
 
 const Analytics = () => {
