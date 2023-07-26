@@ -26,7 +26,10 @@ const Navbar = () => {
         </div>
         {/* mobile menu */}
         <ul className={nav ? 'fixed left-0 top-0 w-[60%] h-full border-r border-r-gray-900 bg-[#000300] ease-in-out duration-500' : 'fixed left-[-100%]'}>
-        <img src={Logo} className='ml-4 mt-6 w-[50px] h-[50px] cursor-pointer' alt="" />
+            <div className='flex'>
+                <img src={Logo} className='ml-4 mt-6 w-[50px] h-[50px] cursor-pointer' alt="" />
+                <h1 className='w-full text-l mt-9 mr-4 font-bold text-[#ffffff] cursor-pointer'>SARMILA SUPPLIERS</h1>
+            </div>
                 <li className='p-4 border-b border-gray-600 text-white cursor-pointer'>Home</li>
                 <li className='p-4 border-b border-gray-600 text-white cursor-pointer'>About</li>
                 <li className='p-4 border-b border-gray-600 text-white cursor-pointer'>Service</li>
