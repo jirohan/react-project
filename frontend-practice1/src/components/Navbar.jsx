@@ -1,41 +1,47 @@
-import React from 'react'
+import React, {useState} from 'react'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
+    const [nav, setNav] = useState(false);
+    const handleNav = () => {
+        setNav(!nav)
+    }
+
   return (
-    <div className='w-full min-h-[50px] flex justify-between'>
-        <header>
-            <nav className='flex items-center justify-between bg-white text-Black gap-4 py-4 px-4'>
-                <a className='font-bold text-4xl' href="">ME</a>
-                <div className='flex items-center justify-between '>
-                    <ul className='flex justify-between gap-4'>
-                        <li>
-                            <a href="/live">Live</a>
-                        </li>
-                        <li>
-                            <a href="/push">Push</a>
-                        </li>
-                        <li>
-                            <a href="/note">Note</a>
-                        </li>
-                        <li>
-                            <a href="/link">Link</a>
-                        </li>
-                        <li>
-                            <a href="/shop">Shop</a>
-                        </li>
-                        <li>
-                            <a href="/packs">Packs</a>
-                        </li>
-                        <li>
-                            <a href="/help">Help</a>
-                        </li>
-                        <li>
-                            <a href="/more">More</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+    <div className='w-full h-[90px] bg-black'>
+        <div className='max-w-[1240px] h-full mx-auto px-4 flex justify-between items-center cursor-pointer bg-blue-100'>
+            <div className='flex'>
+                <svg id="logo-38" width="78" height="32" viewBox="0 0 78 32" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M55.5 0H77.5L58.5 32H36.5L55.5 0Z" class="ccustom" fill="#FF7A00"></path> <path d="M35.5 0H51.5L32.5 32H16.5L35.5 0Z" class="ccompli1" fill="#FF9736"></path> <path d="M19.5 0H31.5L12.5 32H0.5L19.5 0Z" class="ccompli2" fill="#FFBC7D"></path> </svg>
+                <h1 className='text-[var(--primary-orange)]'>LAM</h1>
+            </div>
+            <div className='hidden md:flex'>
+                <ul className='flex text-gray-500 items-center'>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Product</li>
+                    <li>Contact</li>
+                    <button className='ml-4'>Get Started</button>
+                </ul>
+            </div>
+            {/* Hamburger Menu */}
+            <div onClick={handleNav} className='block md:hidden'>
+                <AiOutlineMenu size={30}  />
+                <AiOutlineClose size={30}  />
+            </div>
+
+            {/* Mobile Menu */}
+            <div className='w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center'>
+                <ul>
+                    <li className='text-xl'>Home</li>
+                    <li className='text-xl'>About</li>
+                    <li className='text-xl'>Service</li>
+                    <li className='text-xl'>Product</li>
+                    <li className='text-xl'>Contact</li>
+                    <button className='m-8'>Get Started</button>
+                </ul>
+            </div>
+        </div>
     </div>
   )
 }
