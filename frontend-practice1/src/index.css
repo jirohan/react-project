@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+    --primary-orange: #f49518;
+    --primary-purple: #4c03b1;
+}
+
+@layer base{
+    h1 {
+        @apply text-3xl font-bold uppercase
+    }
+    li {
+        @apply p-4 hover:text-gray-700 font-semibold
+    }
+    button{
+        @apply bg-gradient-to-r from-orange-500 to-orange-100 py-3 px-7 rounded-3xl
+    }
+}
