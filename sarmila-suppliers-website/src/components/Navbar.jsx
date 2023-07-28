@@ -7,39 +7,40 @@ const Navbar = () => {
   const [nav, setNav] = useState(false)
   const handleClick = () => setNav(!nav)
   return (
-    <div className='w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg'>
-      <div className='px-2 flex justify-between items-center w-full h-full'>
-        <div className='flex items-center'>
-          <img className='w-20 h-25 mr-4' src={logo} alt="" />
-          <ul className='hidden md:flex'>
+    <div className='w-full h-[90px] bg-gray-100'>
+      <div className='max-w-[1240px] h-full mx-auto px-4 flex justify-between items-center cursor-pointer bg-gray-100'>
+        <div className='flex'>
+          <img src={logo} className='w-20 h-20' alt="" />
+        </div>
+        <div className='hidden md:flex'>
+          <ul className='flex items-center'>
             <li>Home</li>
             <li>About</li>
             <li>Service</li>
-            <li>Platforms</li>
-            <li>Pricing</li>
+            <li>Products</li>
+            <li>Contact</li>
+            <button className='px-4 py-2'>Call Now</button>
           </ul>
         </div>
-        <div className='hidden md:flex pr-4'>
-          <button className='border-none bg-transparent text-black mr-4'>Sign In</button>
-          <button className='px-8 py-3'>Sign Up</button>
+        {/* <div className='hidden md:flex gap-2'>
+          <button className='px-4 py-2'>Call Now</button>
+        </div> */}
+        {/* Hamburger Menu */}
+        <div onClick={handleClick} className='block md:hidden cursor-pointer'>
+          {nav ? <AiOutlineClose size={30}/> : <AiOutlineMenu size={30}/>}
         </div>
-        <div className='md:hidden cursor-pointer' onClick={handleClick}>
-          {!nav ? <AiOutlineMenu size={30}/> : < AiOutlineClose size={30}/> }
+        {/* Mobile Menu */}
+        <div className={nav ? 'w-full absolute top-[90px] left-0 justify-center text-center bg-black text-white py-4 ease-in duration-200' : 'absolute left-[-100%]'}>
+          <ul className='flex flex-col items-center'>
+            <li>Home</li>
+            <li>About</li>
+            <li>Service</li>
+            <li>Products</li>
+            <li>Contact</li>
+            <button className='px-4 py-2'>Call Now</button>
+          </ul>
         </div>
       </div>
-
-      <ul className={!nav ? 'hidden' : 'absolute bg-zinc-200 w-full px-8'}>
-        <li className='border-b-2 border-zinc-300 w-full'>Home</li>
-        <li className='border-b-2 border-zinc-300 w-full'>About</li>
-        <li className='border-b-2 border-zinc-300 w-full'>Service</li>
-        <li className='border-b-2 border-zinc-300 w-full'>Platforms</li>
-        <li className='border-b-2 border-zinc-300 w-full'>Pricing</li>
-        <div className='flex flex-col my-4'>
-          <button className='bg-transparent text-black px-8 py-3 mb-4'>Sign In</button>
-          <button className='px-8 py-3'>Sign Up</button>
-        </div>
-      </ul>
-      
     </div>
   )
 }
