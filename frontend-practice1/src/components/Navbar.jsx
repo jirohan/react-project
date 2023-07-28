@@ -30,13 +30,13 @@ const Navbar = () => {
             </div>
 
             {/* Mobile Menu */}
-            <div className={nav ? 'w-full bg-black text-white absolute top-[90px] left-0 flex justify-center text-center ease-in duration-200' : 'absolute left-[-100%]'}>
+            <div className={nav ? 'w-full h-[60%] absolute left-0 top-[90px]  bg-black text-white justify-center text-center ease-in duration-200' : 'absolute left-[-100%]'}>
                 <ul>
-                    <li className='text-xl'>Home</li>
-                    <li className='text-xl'>About</li>
-                    <li className='text-xl'>Service</li>
-                    <li className='text-xl'>Product</li>
-                    <li className='text-xl'>Contact</li>
+                    <li className='text-xl border-b  border-orange-100'>Home</li>
+                    <li className='text-xl border-b border-orange-100'>About</li>
+                    <li className='text-xl border-b border-orange-100'>Service</li>
+                    <li className='text-xl border-b border-orange-100'>Product</li>
+                    <li className='text-xl border-b border-orange-100'>Contact</li>
                     <button className='m-8'>Get Started</button>
                 </ul>
             </div>
