@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -26,12 +27,18 @@ const Navbar = () => {
               </ul>
             </div>
             {/*  hamburger menu */}
-            <div className='block md:hidden'>
-
+            <div onClick={handleNav} className='block md:hidden'>
+              {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu size={30} />}
             </div>
             {/*  mobile menu */}
-            <div>
-
+            <div className={nav ? 'w-[80%] h-[60%] absolute top=[90px] left-0 justify-center bg-black/90 text-white' : 'absolute left-[-100%]'}>
+              <ul>
+                <li>Home</li>
+                <li>About</li>
+                <li>Courses</li>
+                <li>Teachers</li>
+                <li>Contact</li>
+              </ul>
             </div>
         </div>
     </div>
