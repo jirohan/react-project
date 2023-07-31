@@ -9,7 +9,7 @@ const Navbar = () => {
   } 
 
   return (
-    <div className='w-full h-[90px] bg-blue-300'>
+    <div className='w-full h-[90px]'>
         <div className='w-[80%] h-full mx-auto px-4 flex justify-between items-center cursor-pointer bg-orange-500 text-white'>
             {/* logo and h1 */}
             <div className='flex items-center text-white'>
