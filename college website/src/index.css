@@ -4,6 +4,6 @@
 
 @layer base{
     li{
-        @apply p-4 hover:border-l-amber-700
+        @apply p-4 hover:text-gray-500
     }
 }
