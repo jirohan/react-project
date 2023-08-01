@@ -15,14 +15,7 @@
       "dropdown": "Blog"
     },
     {
-      "dropdown": [
-        {
-          "dropdown": "More Links"
-        },
-        {
-          "dropdown": "Menu One"
-        }
-      ]
+      "dropdown": "More Links"
     }
   ]
   
