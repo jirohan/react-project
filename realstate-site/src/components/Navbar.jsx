@@ -33,9 +33,9 @@ const App = () => {
               {
                 isOpen && <div className='bg-white absolute top-[70px] flex flex-col items-start w-[200px] p-4 cursor-pointer shadow-lg' >
                   {list.map((item, i) => (
-                  <div className='flex w-full justify-between hover:bg-gray-50 hover:text-cyan-600 rounded-r-xl border-l-transparent p-2' key={i}>
-                    <h3>{item.dropdown}</h3>
-                  </div>
+                    <div className='flex w-full justify-between hover:bg-gray-50 hover:text-cyan-600 rounded-r-xl border-l-transparent p-2' key={i}>
+                        <h3>{item.dropdown}</h3>
+                    </div>
                   ))}
                   </div>
               }
@@ -51,8 +51,11 @@ const App = () => {
               {nav ? <AiOutlineClose size={30} /> : <AiOutlineMenu 
                size={30}/> }
         </div>
+
         {/* mobile menu */}
-        <div className={nav ? 'w-[45%] h-[45%] absolute top-[82px] right-0 justify-center bg-white text-black shadow-lg' : 'absolute right-[-100%]'}>
+        <div onClick={handleNav} className={nav ? 'w-[45%] h-full absolute top-[0px] right-0 justify-center bg-white text-black shadow-lg' : 'absolute right-[-100%]'}>
+        {nav ? <AiOutlineClose size={30} className='top-[0px] ' /> : <AiOutlineMenu 
+               size={30}/> }
               <ul>
                 <li>Home</li>
                 <div className='realtive items-center p-4'>
