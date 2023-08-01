@@ -20,14 +20,14 @@ const Navbar = () => {
                 <ul className='flex items-center text-lg'>
                     <li>Home</li>
                     <div className='relative flex flex-col items-center p-4'>
-                        <button 
+                        <button
                             onClick={() => setIsOpen((prev) => !prev)} className='text-black hover:text-green-700 justify-between flex'>
                                 About
                                 {
                                     isOpen ? (
                                         <AiOutlineCaretUp className='h-7'  /> ) : ( <AiOutlineCaretDown className='h-7' />)
                                 }
-                            </button>
+                        </button>
                             {isOpen && <div className='bg-white absolute top-[90px] flex flex-col items-start rounded-xl p-4 w-[200px] cursor-pointer shadow-2xl'>
                                 {list.map((item, i) => (
                                     <div className='flex w-full justify-between hover:bg-gray-50 cursor-pointer rounded-r-xl border-l-transparent p-2 hover:border-l-green-700 border-l-4' key={i}>
