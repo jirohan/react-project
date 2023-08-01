@@ -19,7 +19,7 @@ const Navbar = () => {
             <div className='hidden md:flex'>
                 <ul className='flex items-center text-lg'>
                     <li>Home</li>
-                    <div className='relative flex flex-col items-center p-4'>
+                    <div className='relative items-center p-4'>
                         <button
                             onClick={() => setIsOpen((prev) => !prev)} className='text-black hover:text-green-700 justify-between flex'>
                                 About
