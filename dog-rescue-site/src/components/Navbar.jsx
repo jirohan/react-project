@@ -41,7 +41,7 @@ const Navbar = () => {
                     <li>Home</li>
                     <div className='relative items-center p-4'>
                         <button
-                            onClick={() => setIsOpen((prev) => !prev)} className='text-black hover:text-green-700 justify-between flex'>
+                            onClick={() => {setIsOpen((prev) => !prev);}} className='text-black hover:text-green-700 justify-between flex'>
                                 About
                                 {
                                     isOpen ? (
