@@ -6,4 +6,5 @@
     li{
         @apply p-4 hover:text-green-500
     }
+  
 }
