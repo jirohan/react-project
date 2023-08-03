@@ -1,8 +1,9 @@
 import React from 'react'
+import './Manner.css'
 
 const Manner = () => {
   return (
-    <div className='w-full py-16 bg-black text-white px-4'>
+    <div className='w-[1240px] py-16 text-black px-4 bg-custom-background mx-auto'>
         
         <div className='max-w-[1240px] mx-auto grid lg:grid-cols-3'>
             <div className='lg:col-span-2'>
