@@ -4,6 +4,7 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import Service from './components/Service'
 import Offer from './components/Offer'
+import Manner from './components/Manner'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Service />
       <Offer />
+      <Manner />
     </div>
   )
 }
